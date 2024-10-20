@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cont{
+    margin: 20px auto;
+    height: 300px;
+    width: 200px;
+border: 3px solid green;
+background-color: rgb(234, 255, 203);
+}
+img{
+    margin: 10px auto;
+    display: block;
+    border-radius: 50%;
+}
+#calcu{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#btn1{
+    margin-left: 40px;
+}
+#btn2{
+    margin-right: 40px;
+}
+    </style>
+</head>git
+<body>
+    <div class="cont">
+        <img src="download.jpg" height="200px" width="150px">
+        <div>
+        <button id="btn1" onclick="inc()"> + </button>
+        <span id="calcu">1</span>
+        <button id="btn2" onclick="dec()"> - </button></div>
+    </div></div>
+    <script>
+        function inc()
+        {
+            let increment=document.getElementById("calcu")
+            let inc1=parseInt(increment.innerText)
+            increment.innerText=inc1+1
+        }
+        function dec(){
+            let decrement=document.getElementById("calcu")
+            let dec1=parseInt(decrement.innerText)
+            decrement.innerText=dec1-1
+        }
+    </script>
+</body>
+</html>
